@@ -5,9 +5,8 @@ EAPI=8
 
 DESCRIPTION="Open-source game engine for everyone. No strings attached."
 HOMEPAGE="https://www.redotengine.org/"
-#SRC_URI="https://github.com/Redot-Engine/redot-engine/archive/refs/tags/${P}-rc.1.tar.gz -> ${P}.tar.gz"
-# This is done to prevent refreshing.
 SRC_URI="https://mcdubh.org/redot/redot-4.3.1-stable.tar.gz -> ${P}.tar.gz"
+RESTRICT="mirror" # So we don't check mirrors. This is a private overlay.
 
 LICENSE="
 	MIT
