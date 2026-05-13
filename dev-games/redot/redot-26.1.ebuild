@@ -155,6 +155,8 @@ src_compile() {
 		module_theora_enabled=$(usex theora)
 		module_upnp_enabled=$(usex upnp)
 		module_webp_enabled=$(usex webp)
+		# This has to be disabled due to a bug I cannot reproduce.
+		module_mcp_enabled=no
 
 		# let *FLAGS handle these
 		debug_symbols=no
